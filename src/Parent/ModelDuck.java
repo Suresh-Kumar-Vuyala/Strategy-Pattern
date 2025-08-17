@@ -1,17 +1,19 @@
-
+package Parent;
 import ChangingBehaviors.FlyingBehavior;
-import  ChangingBehaviors.QuackingBehavior;
+import ChangingBehaviors.QuackingBehavior;
 
 
 public abstract class ModelDuck {
-   String duckName;
+  public  String duckName;
    FlyingBehavior fb;
    QuackingBehavior qb;
-   public ModelDuck() {
+
+   public ModelDuck(String name) {
+             duckName=name;
    }
    public void swim() {
       
-      System.out.println(getName()+"Starts swimming in water");
+      System.out.println(getName()+" Starts swimming in water\n");
    }
 
    public void setFlyAndQuack(FlyingBehavior A,QuackingBehavior B){
@@ -19,18 +21,18 @@ public abstract class ModelDuck {
             qb=B;
    }
    public void fly(){
+        System.out.print(duckName+" :");
         fb.performFlying();
 
    }
 
    public void quack(){
+        System.out.print(duckName+" :");
        qb.performQuacking();
    }
 
    public abstract String getName();
    public abstract void displayDuck();
 
-   public static void main(String[] var0) {
-      System.out.println("Model Duck");
-   }
+  
 }

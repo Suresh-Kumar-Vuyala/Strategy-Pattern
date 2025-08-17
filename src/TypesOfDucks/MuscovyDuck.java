@@ -2,13 +2,13 @@ package TypesOfDucks;
  
 import Parent.ModelDuck;
 
-public class MallardDuck extends ModelDuck{
+public class MuscovyDuck extends ModelDuck{
       
-    public MallardDuck(String Name){
+    public MuscovyDuck(String Name){
             super(Name);  
     }
     public  void displayDuck(){
-            System.out.println("Mallard Duck is displayed\n");
+            System.out.println("Muscovy Duck is displayed\n");
      }
      public String getName(){
         return duckName;

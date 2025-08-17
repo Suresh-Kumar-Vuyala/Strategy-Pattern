@@ -1,5 +1,5 @@
 package ChangingBehaviors;
 public interface FlyingBehavior {
-      void performFlying();
+      public void performFlying();
 }
 
